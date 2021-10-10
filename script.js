@@ -15,20 +15,18 @@ shipHours = function () {
     $(id).append(hourBlock);
 
     var texty;
-    var txt = "txt-" + i;
 
     if (moment(currentTime).isAfter(scheme)) {
-      texty = $("<textarea>")
-        .addClass("col-8 description past")
-        .attr("id", txt);
+      texty = $("<textarea>").addClass("col-8 description past");
+
       $(id).append(texty);
     }
     if (moment(currentTime).isSame(scheme)) {
-      texty = $("<textarea>").addClass("col-8 present").attr("id", txt);
+      texty = $("<textarea>").addClass("col-8 present");
       $(id).append(texty);
     }
     if (moment(currentTime).isBefore(scheme)) {
-      texty = $("<textarea>").addClass("col-8 future").attr("id", txt);
+      texty = $("<textarea>").addClass("col-8 future");
       $(id).append(texty);
     }
 
@@ -75,10 +73,10 @@ shipHours = function () {
   document.getElementById("8").addEventListener("keyup", (event) => {
     localStorage.setItem("8", event.target.value);
   });
-  var comment = document.getElementsByClassName("clearBtn");
-  comment[0].addEventListener("click", function () {
-    console.log("hello");
-  });
+  //   var comment = document.getElementsByClassName("clearBtn");
+  //   comment[0].addEventListener("click", function () {
+  //     console.log("hello");
+  //   });
 };
 
 updateToday = function () {

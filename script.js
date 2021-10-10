@@ -29,10 +29,14 @@ shipHours = function () {
       $(id).append(texty);
     }
 
-    var saveDiv = $("<i>").addClass("col-md-2 saveBtn").text("save");
+    var saveDiv = $("<button>").addClass("col-md-2 saveBtn").text("save");
     $(id).append(saveDiv);
 
     $(".list-group").addClass("big");
+
+    // document.getElementsByName("button").addEventListener("click", function () {
+    //   console.log("hello");
+    // });
   });
 };
 

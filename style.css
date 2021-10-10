@@ -1,7 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark-bg: #262626;
+  --deep-dark: #1e1e1e;
+  --gray-1: #bcb4b4;
+  --gray-2: #363636;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: var(--deep-dark);
+  color: white;
 }
 
 textarea {
@@ -16,7 +30,7 @@ textarea {
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: white;
   border-radius: 0;
   border-bottom: 10px solid black;
 }
@@ -34,11 +48,12 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  width: 1200px;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--gray-1);
+  color: white;
   border-top: 1px dashed #000000;
 }
 
@@ -68,4 +83,8 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.list-group-item {
+  background-color: var(--gray-2);
 }

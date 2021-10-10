@@ -48,7 +48,6 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
-  width: 1200px;
 }
 
 .hour {
@@ -72,7 +71,7 @@ textarea {
   color: white;
 }
 
-.saveBtn {
+.clearBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -80,7 +79,7 @@ textarea {
   color: white;
 }
 
-.saveBtn i:hover {
+.clearBtn:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
